@@ -1,18 +1,66 @@
-## Getting Started
+# Práctica Servidor - Cliente en Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este proyecto implementa una arquitectura cliente-servidor en Java utilizando hilos para manejar múltiples conexiones.
 
-## Folder Structure
+## 📁 Estructura del Proyecto
 
-The workspace contains two folders by default, where:
+```
+PRÁCTICA_SERVIDOR/
+├── numero_practica/
+│   ├── .vscode/                # Configuración de VS Code
+│   ├── bin/                    # Archivos compilados
+│   ├── lib/                    # Dependencias del proyecto
+│   ├── src/                    # Código fuente
+│   │   ├── net/salesianos/
+│   │   │   ├── client/         # Código relacionado con el cliente
+│   │   │   │   ├── threads/    # Manejadores de hilos del cliente
+│   │   │   │   │   ├── ServerListener.java
+│   │   │   │   ├── ClientApp.java
+│   │   │   ├── server/         # Código relacionado con el servidor
+│   │   │   │   ├── threads/    # Manejadores de hilos del servidor
+│   │   │   │   │   ├── ClientHandler.java
+│   │   │   │   ├── ServerApp.java
+│   │   │   ├── utils/          # Utilidades adicionales
+├── .gitattributes              # Configuración de Git
+├── .gitignore                  # Archivos ignorados por Git
+├── LICENSE                     # Licencia del proyecto
+├── README.md                   # Documentación del proyecto
+├── numero_practica.zip         # Archivo comprimido del proyecto
+```
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🚀 Instalación y Uso
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### 📌 Requisitos Previos
+- Tener instalado **Java JDK 8+**
+- Tener **Visual Studio Code** o cualquier otro editor de texto
+- Agregar las dependencias necesarias en la carpeta `lib/`
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### 🔧 Compilación y Ejecución
 
-## Dependency Management
+#### 1️⃣ Compilar el Proyecto
+```sh
+javac -d bin -sourcepath src src/net/salesianos/server/ServerApp.java
+javac -d bin -sourcepath src src/net/salesianos/client/ClientApp.java
+```
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+#### 2️⃣ Ejecutar el Servidor
+```sh
+java -cp bin net.salesianos.server.ServerApp
+```
+
+#### 3️⃣ Ejecutar el Cliente
+```sh
+java -cp bin net.salesianos.client.ClientApp
+```
+
+## 🛠️ Funcionalidades
+- Manejo de múltiples clientes simultáneamente utilizando **hilos**.
+- Comunicación entre cliente y servidor a través de **sockets**.
+- Modularización del código en paquetes para mejor organización.
+- Posibilidad de ampliar la funcionalidad agregando nuevas clases en `utils/`.
+
+## 📜 Licencia
+Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+## 👨‍💻 Autor
+Desarrollado por [ElMafiosodeJava](https://github.com/ElMafiosodeJava). ¡Siéntete libre de contribuir! 🚀
