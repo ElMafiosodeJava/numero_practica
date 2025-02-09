@@ -28,13 +28,6 @@ PRÁCTICA_SERVIDOR/
 ├── numero_practica.zip         # Archivo comprimido del proyecto
 ```
 
-## 🚀 Instalación y Uso
-
-### 📌 Requisitos Previos
-- Tener instalado **Java JDK 8+**
-- Tener **Visual Studio Code** o cualquier otro editor de texto
-- Agregar las dependencias necesarias en la carpeta `lib/`
-
 ### 🔧 Compilación y Ejecución
 
 #### 1️⃣ Compilar el Proyecto
@@ -60,7 +53,7 @@ java -cp bin net.salesianos.client.ClientApp
 - Posibilidad de ampliar la funcionalidad agregando nuevas clases en `utils/`.
 
 ## 📜 Licencia
-Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+Este proyecto está licenciado bajo la licencia The unlicense. Consulta el archivo `LICENSE` para más detalles.
 
 ## 👨‍💻 Autor
 Desarrollado por [ElMafiosodeJava](https://github.com/ElMafiosodeJava). ¡Siéntete libre de contribuir! 🚀
