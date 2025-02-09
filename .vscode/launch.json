@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ClientApp",
+            "request": "launch",
+            "mainClass": "net.salesianos.client.ClientApp",
+            "projectName": "numero_practica_b463af9e"
+        },
+        {
+            "type": "java",
+            "name": "ServerApp",
+            "request": "launch",
+            "mainClass": "net.salesianos.server.ServerApp",
+            "projectName": "numero_practica_b463af9e"
+        }
+    ]
+}
